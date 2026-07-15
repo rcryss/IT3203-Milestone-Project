@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href= "style.css">
+
+    </head>
+
+    <body>
+
+<!-- headers --> 
+    <header>
+    <h1>Web Communication: HTTP </h1>
+    </header>
+
+<!-- navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-http-works.html">How HTTP Works</a></li>
+            <li><a href="http-evolution.html">The Evolution of HTTP</a></li>
+            <li><a href="concepts.html">Key Concepts</a></li>
+             <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="ref.html">References</a></li>
+        </ul>
+
+    </nav>
+
+<!-- quiz!-->
+ <!-- radio buttons stand more multiple choice questions because only one choice can be selected -->
+ <!-- checkbox, means that more than one option can be selected -->
+ <!-- text stands for inputed text from user -->
+  
+
+    
+    <main>
+    
+     <h2> Quiz! </h2>    
+
+     <form id="quizForm">
+
+
+        <div class="question">
+            <p>1. Who invented the World Wide Web?</p>
+
+            <input type="radio" name="q1" value="correct">
+            Tim Berners-lee<br>
+
+            <input type="radio" name="q1" value="wrong">
+            Steve Jobs<br>
+
+            <input type="radio" name="q1" value="wrong">
+            Bill Gates<br>
+
+            <input type="radio" name="q1" value="wrong">
+            Robert Kahn<br>
+        </div>
+
+        <div class="question">
+
+            <p>2.What year was HTTP invented</p>
+            <input type="radio" name="q2" value="wrong">
+            1985<br>
+
+            <input type="radio" name="q2" value="correct">
+            1989<br>
+
+            <input type="radio" name="q2" value="wrong">
+            1999<br>
+
+            <input type="radio" name="q2" value="wrong">
+            1995<br>
+
+
+        </div>
+            
+        
+        <div class="question">
+            <p>3. What does HTTP stand for?</p>
+            <input type="text" id="q3" placeholder=" "> <br>
+        </div>
+
+        <div class="question">
+            <p>4.Which protocol provides secure communication over HTTP?</p>
+            <input type="radio" name="q4" value="wrong">
+            DNS<br>
+            <input type="radio" name="q4" value="wrong">
+            FTTP<br>
+            <input type="radio" name="q4" value="correct">
+            HTTPS<br>
+            <input type="radio" name="q4" value="wrong">
+            SMTP<br>
+        </div>
+        <div class="question">
+            <p>5. Which of the following are valid HTTP request methods? (Please select all that apply)</p>
+            <label>
+                <input type="checkbox" name="q5" value="GET">
+                GET
+            </label><br>
+            <label>
+                <input type="checkbox" name="q5" value="POST">
+                POST
+            </label><br>
+            <label>
+                <input type="checkbox" name="q5" value="PUT">
+                PUT
+            </label><br>
+            <label>
+                <input type="checkbox" name="q5" value="DELETE">
+                DELETE
+            </label><br>
+            <label>
+                <input type="checkbox" name="q5" value="DOWNLOAD">
+                DOWNLOAD
+            </label><br>
+        </div>
+
+
+
+
+        <button type="button" onclick="checkQuiz()">
+            Submit
+        </button><br>
+        
+
+        <button type="reset">
+            Retake Quiz
+        </button><br>
+
+       
+     </form>      
+
+     <div id="results"></div>
+     <script src="quiz.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>    
+
+    <footer>
+        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>    
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project"></a>
+
+    </footer>  
+
+
+    </body>
+</html>
