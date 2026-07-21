@@ -9,15 +9,26 @@
 
     </head>
 
+<body>
+
 <!-- headers --> 
     <header>
+
+    <div class="header-container">     
+
     <h1>Web Communication: HTTP </h1>
-    </header>
 
 
-    <body>
+    <!-- hamburger button -->
+    
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>    
+
+    
+
         <!-- navigation bar-->    
-     <nav>
+     <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-http-works.html">How HTTP Works</a></li>
@@ -28,10 +39,14 @@
             <li><a href="ref.html">References</a></li>
         </ul>
 
+        </header> 
+        
+    </div>    
+
 <main>    
 
     <!-- headers and paragraph -->
-        <h1> How HTTP Works</h1>
+        <h2> How HTTP Works</h2>
 
         <p> HTTP was invented in 1989 by Tim Berners-Lee, while he was working at CERN. 
             HTTP was designed to facilitate communication between scientists allowing them
@@ -65,15 +80,21 @@
             
         </p>
 
+
         <h2> HTTP Status Codes</h2>
         <p> An HTTP status code is a three-digit response
             to a client's request. There are five different categories: 
+            <ul class="center-list"> 
             <li>1xx(Informational)</li>
             <li>2xx(Success)</li>
             <li>3xx(Redirection)</li>
             <li>4xx(Client Error)</li>
             <li>5xx(Server Error)</li>
+            </ul>
         </p>
+
+
+    <script src="script.js"></script>    
 
 
     </main>
@@ -81,10 +102,12 @@
 
 
     <footer>
-        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>
-        <a href= "https://github.com/rcryss/IT3203-Milestone-Project"></a>
-
-
+        <p>Developed by Crystal Rojo</p>
+        <p>
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project" target="_blank">
+            IT 3203: Introduction to Web Development
+        </a>     
+        </p>    
     </footer>    
 
     </body>

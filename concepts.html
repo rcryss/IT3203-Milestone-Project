@@ -8,15 +8,29 @@
     <link rel="stylesheet" href= "style.css"> 
 
     </head>
+ <body>     
 
 <!-- headers --> 
 
     <header>
+
+    <div class="header-container">
+     
+        
     <h1>Web Communication: HTTP </h1>
-    </header>
+
+
+    <!-- hamburger button -->
+    
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>    
+    
+
+   
 <!-- navigation bar -->
 
-    <nav>
+    <nav id="navbar">
     <ul> 
         <li><a href="index.html">Home</a></li>
             <li><a href="how-http-works.html">How HTTP Works</a></li>
@@ -25,54 +39,110 @@
              <li><a href="quiz.html">Quiz</a></li>
             <li><a href="about_me.html">About Me</a></li>
             <li><a href="ref.html">References</a></li>
-        </ul>
     </ul>
-
-
-
 
     </nav>
 
     
-    <body> 
+    </div> 
+
+    </header>
+
+    
+   
     
     <main>
 <!-- key concepts list -->
 
+<div class="concept-table">  
 
-    <h1> Key Concepts</h1>
-    <ul class="center-list">
-        <li>World Wide Web</li>
-        <li>HTTP</li>
-        <li>HTTPS</li>
-        <li>HTML</li>
-        <li>Client</li>
-        <li>Server</li>
+
+    <h2> Key Concepts</h2>
+    <table class="concept-table">
+       <tr>
+        <th>Term</th>
+        <th>Definition</th>
+       </tr>
+       <tr id="www">
+        <td>World Wide Web</td>
+        <td>
+            World Wide Web is a collection of websites and resources that can be accessed through the internet by users around the world.
+        </td>
+       </tr>
         
+        <tr id="http">
+        <td>HTTP</td>
+        <td>
+        HyperText Transfer Protocol (HTTP) is an application layer protocol that enables communication between clients and servers in order to exchange information over the internet.
+        </td>
+        </tr>
+    
+        <tr id="HTTPS">
+            <td>HTTPS</td>
+            <td>HyperText Transfer Protocol Secure (HTTPS) is a secure version of HTTP which encrypts the data being transferred.</td>
+        </tr>
+        
+        <tr id="HTML">
+            <td>HTML</td>
+            <td>HTML is a markup language utilized to create the structure content on websites.</td>
+        </tr>
+        
+        <tr id="Client">
+            <td>Client</td>
+            <td>Client is a device such as a computer  that sends a request to a server.</td>
+        </tr>
+        
+        <tr id="Server">
+            <td>Server</td>
+            <td>A server is system that listens for client requests and responds with the requested information</td>
+        </tr>
+        
+        <tr id="POST">
+            <td>POST</td>
+            <td>The POST method is an HTTP request that sends data to a server to update a resource. </td>
+        </tr>
+        
+        <tr id="GET">
+            <td>GET</td>
+            <td>GET requests the data from a server</td>   
+        </tr>
+        
+        <tr id="PUT">
+            <td>PUT</td>
+            <td>PUT replaces an entire resource or creates a new one if it doesn't exist</td>
+        </tr>
+        
+        <tr id="PATCH">
+            <td>PATCH</td>
+            <td>PATCH is used to modify an existing resource</td>
+        </tr>
+        
+        <tr id="DELETE">
+            <td>DELETE</td>
+            <td>DELETE permanently deletes a resource from a server </td>
+        </tr>
+        
+    </table>
+</div>
 
-
-    </ul>
-
-
-
-
-
-
+    
+    <script src="script.js"></script>
 
 
     </main>
-
 
     <!-- footer -->
 
 
 
     <footer>
-        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>
-        <a href= "https://github.com/rcryss/IT3203-Milestone-Project"></a>
-
-
+        <p>Developed by Crystal Rojo</p>
+        <p>
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project" target="_blank">
+            IT 3203: Introduction to Web Development
+        </a>     
+        </p>    
     </footer>    
-    </body>
+</body>
 
 </html>

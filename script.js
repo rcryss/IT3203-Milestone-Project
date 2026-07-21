@@ -90,14 +90,20 @@ function checkQuiz(){
     document.getElementById("results").innerHTML = results;    
 
 
-
-
-
-
-
-
-
-
-
-
 }
+
+// reset quiz 
+
+function resetQuiz(){
+    document.getElementById("quizForm").reset();
+    document.getElementById("results").innerHTML ="";
+}
+
+    // toggle hamburger menu 
+
+    function toggleMenu(){
+        document.getElementById("navbar").classList.toggle("active");
+    }
+
+
+

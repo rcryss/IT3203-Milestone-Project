@@ -8,11 +8,21 @@
     <link rel="stylesheet" href= "style.css"> 
      </head>   
     <header>
+     
+    <div class="header-container">    
     <h1>Web Communication: HTTP </h1>
-    </header>    
 
 
-         <nav>
+    <!-- hamburger button -->
+    
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>    
+
+    
+
+
+         <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-http-works.html">How HTTP Works</a></li>
@@ -25,14 +35,15 @@
 
     </nav>
 
-
+    </div>
+    </header>    
     <body>
 <main>       
 <!-- header title !-->            
-    <h1> The Evolution of HTTP</h1>
+    <h2> The Evolution of HTTP</h2>
 
     <p> In 1989, Tim Berners-Lee invented the World Wide Web, while he was working at CERN. 
-         Initially developed as a protocol to facilitate information-sharing amoung scientists
+         Initially developed as a protocol to facilitate information-sharing among scientists
          around the world, HTTP has evolved into a fundamental block in modern day technology.
          HTTP is an application layer protocol that allows web browsers and servers to communicate with each other across the Internet.
          The World Wide Web relied on four key components: HTML, URL, HTTP, and web browsers.
@@ -52,7 +63,7 @@
     
     <h2> HTTP/1.0</h2>
     <p>
-        In 1996, HTTP/1.0 was released, which added support for message headers, immage transmission, status codes 
+        In 1996, HTTP/1.0 was released, which added support for message headers, image transmission, status codes 
         and other types of files that were able to be transmitted due to Content-Type headers.
         The introduction of HTTP/1.0 allowed for more complex transmissions between clients and servers,
         since different types of files could be transmitted instead of just plain text files. HTTP/1.0 established
@@ -75,7 +86,7 @@
         Regardless, HTTP/1.1 still had some inefficiencies and kept being revised over the years. In 2015, HTTP/2 was released,
         which broke down data into binary frames, making the information much easier for machines to process compared to HTTP 1.1
         plain text. HTTP/2 introduced multiplexing, which cuts the request and responses into smaller bits and transmitts them over
-        a singluar TCP connection, allowing for multiple requests and ersponses to be sent at the same time. HTTP/2 also introduced
+        a singular TCP connection, allowing for multiple requests and responses to be sent at the same time. HTTP/2 also introduced
         HPACK compression, which sends a tiny index number of changes from the previous request saving valuable network resources.
         Server push was also introduced in HTTP/2, which allows servers to send resources to clients before they are requested, greatly improving the speed of web pages.
 
@@ -94,14 +105,32 @@
 
 
     </p>
+
+    <img src="evolution-of-http.png" alt="Evolution of HTTP" width="500" height="700">
     
+
+
+    <h2>HTTPS</h2>
+    <p>
+        Hyper Transfer Protocol Secure (HTTPS) was created in the 1990s, through the use of Secure Sockets Layer(SSL). HTTPS is just like HTTP, but adds SSL and Transport Layer Security(TLS) protocols to establish
+        communication. With HTTP, data is sent across as plain text, leaving senstive information open for interception from unwanted users. However, with SSL, data is sent across HTTP encrypted, therefore making it 
+        difficult for malicious users to read the information. In 2014, Google adapted HTTPS into their search URLS, which prompted other technology companies to do the same. Google marked HTTP as "Not Secure" to warn
+        users about inputting senstive data. Today, HTTPS is considered the standard protocl for secure communication on the internet.   
+    </p>
+
+    <img src="https-lock.png" alt="HTTPS-lock" width="500" height="700">
+    
+    <script src="script.js"></script>
 
     </main>
 <!-- footer -->
     <footer>
-        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>
-        <a href= "https://github.com/rcryss/IT3203-Milestone-Project"></a>
-    </footer>    
+        <p>Developed by Crystal Rojo</p>
+        <p>
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project" target="_blank">
+            IT 3203: Introduction to Web Development
+        </a>     
+        </p>    
     </body>
 
 

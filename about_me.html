@@ -8,13 +8,24 @@
     <link rel="stylesheet" href= "style.css">
 
     </head>
+<body>
 <!-- headers --> 
     <header>
+
+    <div class="header-container">
+        
     <h1>Web Communication: HTTP </h1>
-    </header>
+
+    <!-- hamburger button -->
+    
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>    
+
     
 <!-- navigation bar -->
-    <nav>
+    <nav id="navbar">
+
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-http-works.html">How HTTP Works</a></li>
@@ -26,26 +37,40 @@
         </ul>
 
     </nav>
+
+    </div>
+    </header>
     
-    <body>
+    
 
     <main>    
 
-        <h1>About Me!</h1>
+        <h2>About Me!</h2>
         <p>Hello, My name is Crystal Rojo, and I am a senior majoring in Cybersecurity at Kennesaw State University.
         Through this course I aspire to gain a better understanding of web development while learning how websites 
         work and how to create them. 
 
         </p>
 
+
+        <img src="IMG_6450.jpg" alt="Crystal R Picture" width="500" height="700">
+
+    <script src="script.js"></script>    
+
+
+
     </main>    
 
     <!-- footer --> 
 
     <footer>
-        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>  z  
-
+        <p>Developed by Crystal Rojo</p>
+        <p>
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project" target="_blank">
+            IT 3203: Introduction to Web Development
+        </a>     
+        </p>    
     </footer>    
 
-    </body>
+</body>
 </html>

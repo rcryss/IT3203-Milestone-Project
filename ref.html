@@ -10,11 +10,19 @@
     </head>
 
     <header>
+    <div class="header-container">         
     <h1>Web Communication: HTTP </h1>
-    </header>
+    
+    <!-- hamburger button -->
+    
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>    
+
+    
 
 
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-http-works.html">How HTTP Works</a></li>
@@ -26,32 +34,84 @@
         </ul>
 
     </nav>
-
+    </div>
+    </header>
     
     <body> 
 
     <main>    
-        <h1> References</h1>
 
-        <ul>
+        <div class="ref-list">
+        <h2> References</h2>
+
+        
         <li>
         <a href="https://www.youtube.com/watch?v=PlxWf493en4&t=1235s" target="_blank">
             How to Create a Simple Website
         </a>
         </li>
+        <li>
         <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk&t=2530s" target="_blank">
             JavaScript Course for Beginners
         </a>
-        </ul>
+        </li>
+        <li>
+        <a href="https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/ " target="_blank">
+            What is HTTP?
+        </a>
+        </li>
+        <li>
+        <a href="https://www.geeksforgeeks.org/html/explain-working-of-https/" target="_blank">
+            HTTPS Explained
+        </a>
+        </li>
+        <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP" target="_blank">
+            The evolution of HTTP
+        </a>
+        </li>
+        <li>
+        <a href="https://home.cern/science/computing/the-birth-of-the-web/short-history-web/ " target="_blank">
+            The World Wide Web History
+        </a>
+        </li>
+        <li>
+        <a href="https://leapcell.medium.com/the-evolution-of-http-1-0-vs-1-1-vs-2-0-a-clear-comparison-3948217adc97 " target="_blank">
+            Evolution of HTTP 1.0 vs 2.0. 
+        </a>
+        </li>
+        <li>
+        <a href="https://www.debugbear.com/blog/http3-quic-protocol-guide" target="_blank">
+            HTTP3 QUIC
+        </a>
+        </li>
+        <li>
+        <a href="https://medium.com/@khaledsab1997/how-have-http-versions-evolved-over-the-years-and-what-problems-each-version-has-and-how-do-newer-7f69f0dbf71d " target="_blank">
+            HTTP versions evolution
+        </a>
+        </li>
+        <li>
+            <a href="https://medium.com/@jakpren3/the-evolution-of-http-and-what-it-still-got-wrong-9356b360e21b " target="_blank">
+                Evolution of HTTP and What it still got wrong
+            </a>
+        </li>
+        
+        </div>
+
+    <script src="script.js"></script>    
+
 
     </main>    
 
         <footer>
-        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>
-        <a href= "https://github.com/rcryss/IT3203-Milestone-Project">
-            IT 3203: Intro to Web Development 
-        </a>    
+        <p>Developed by Crystal Rojo</p>
+        <p>
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project" target="_blank">
+            IT 3203: Introduction to Web Development
+        </a>     
+        </p>    
         </footer>
+        
 
     </body>
 

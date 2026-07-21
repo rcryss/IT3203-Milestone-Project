@@ -13,11 +13,20 @@
 
 <!-- headers --> 
     <header>
+    <div class="header-container">    
     <h1>Web Communication: HTTP </h1>
-    </header>
+
+
+    <!-- hamburger button -->
+    
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>    
+
+    
 
 <!-- navigation bar -->
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-http-works.html">How HTTP Works</a></li>
@@ -29,6 +38,10 @@
         </ul>
 
     </nav>
+
+    </div>
+
+    </header>
 
 <!-- quiz!-->
  <!-- radio buttons stand more multiple choice questions because only one choice can be selected -->
@@ -45,7 +58,7 @@
 
 
         <div class="question">
-            <p>1. Who invented the World Wide Web?</p>
+            <h3>1. Who invented the World Wide Web?</h3>
 
             <input type="radio" name="q1" value="correct">
             Tim Berners-lee<br>
@@ -62,7 +75,7 @@
 
         <div class="question">
 
-            <p>2.What year was HTTP invented</p>
+            <h3>2.What year was HTTP invented?</h3>
             <input type="radio" name="q2" value="wrong">
             1985<br>
 
@@ -80,12 +93,12 @@
             
         
         <div class="question">
-            <p>3. What does HTTP stand for?</p>
+            <h3>3. What does HTTP stand for?</h3>
             <input type="text" id="q3" placeholder=" "> <br>
         </div>
 
         <div class="question">
-            <p>4.Which protocol provides secure communication over HTTP?</p>
+            <h3>4.Which protocol provides secure communication over HTTP?</h3>
             <input type="radio" name="q4" value="wrong">
             DNS<br>
             <input type="radio" name="q4" value="wrong">
@@ -96,7 +109,7 @@
             SMTP<br>
         </div>
         <div class="question">
-            <p>5. Which of the following are valid HTTP request methods? (Please select all that apply)</p>
+            <h3>5. Which of the following are valid HTTP request methods? (Please select all that apply)</h3>
             <label>
                 <input type="checkbox" name="q5" value="GET">
                 GET
@@ -120,14 +133,14 @@
         </div>
 
 
-
+<!-- buttons to submit and retake quiz!-->
 
         <button type="button" onclick="checkQuiz()">
             Submit
         </button><br>
         
 
-        <button type="reset">
+        <button type="reset" onclick="resetQuiz()">
             Retake Quiz
         </button><br>
 
@@ -135,7 +148,7 @@
      </form>      
 
      <div id="results"></div>
-     <script src="quiz.js"></script>
+     <script src="script.js"></script>
 
 
 
@@ -155,9 +168,12 @@
     </main>    
 
     <footer>
-        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>    
-        <a href= "https://github.com/rcryss/IT3203-Milestone-Project"></a>
-
+       <p>Developed by Crystal Rojo</p>
+        <p>
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project" target="_blank">
+            IT 3203: Introduction to Web Development
+        </a>     
+        </p>    
     </footer>  
 
 

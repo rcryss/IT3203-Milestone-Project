@@ -8,22 +8,25 @@
    
     <link rel="stylesheet" href= "style.css"> 
 
-
+<body>
     </head>
 
     <!-- headers --> 
 
     <header>
+
+    <div class="header-container">
+        
     <h1>Web Communication: HTTP </h1>
-    </header>
 
-
-
-<body>
-
+    <!-- hamburger button -->
+    
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>    
 
     <!-- navigation bar -->
-      <nav>
+      <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-http-works.html">How HTTP Works</a></li>
@@ -35,15 +38,20 @@
         </ul>
     </nav>
 
+    </div>
+
+    </header>
 
 <main>
    
-    <h2> What is HTTP </h2>
+    <h2> What is HTTP? </h2>
     
 
 <p> 
         Hypertext Transfer Protocol (HTTP) is one of the fundamental building blocks of the World Wide Web. Developed by 
         Tim Berners-lee in 1989, HTTP was designed to facilitate communication between web browsers and servers.
+        HTTP is an Application layer protocol in the OSI model, meaning that it is responsible for providing services 
+        that applications use to communicate over a network. HTTP operates on a Client-server model, where clients send requests and servers return responses. 
         This website explores how these protocols work, and how they have evolved over time, and remain
         key essentials in modern day web communication.
     </p>
@@ -57,16 +65,28 @@
         <li>HTML</li>
         <li>Client</li>
         <li>Server</li>
-        
+        <li>POST</li>
+        <li>GET</li>
+        <li>PUT</li>
+        <li>PATCH</li>
+        <li>DELETE</li>
 
 
     </ul>
+
+
+     <script src="script.js"></script>
+
 </main>
 
 <!-- footer --> 
     <footer>
-        <p>Developed by Crystal Rojo for IT 3203 Web Development</p>
-        <a href= "https://github.com/rcryss/IT3203-Milestone-Project"></a>
+        <p>Developed by Crystal Rojo</p>
+        <p>
+        <a href= "https://github.com/rcryss/IT3203-Milestone-Project" target="_blank">
+            IT 3203: Introduction to Web Development
+        </a>     
+        </p>    
     </footer>    
 
 </body>
